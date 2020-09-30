@@ -111,7 +111,7 @@
         <div id="collapseMonitoria" class="collapse" aria-labelledby="headingMonitoria" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <a class="collapse-item" href="">Atendimento</a>
-            <a class="collapse-item" href="monitoria.html">Monitoria</a>
+            <a class="collapse-item" href="">Monitoria</a>
           </div>
         </div>
       </li>
@@ -359,33 +359,33 @@
         <div class="container-fluid">
 
             <!-- Page Heading -->
-            <h1 class="h3 mb-2 text-gray-800">Alterar a senha</h1>
+            <h1 class="h3 mb-2 text-gray-800">Solicitar Monitoria</h1>
             <!-- DataTales Example -->
-            <div class="card shadow mb-4">
-              <div class="nova-senha">
-                <div class="table-responsive">
-                  <div class="form-group">
-                    <label for="senhaAtual"> Senha atual:
-                    <input type="password" class="form-control form-control-user" id="senhaAtual">
-
-                    <label for="novaSenha"> Nova senha:
-                    <input type="password" class="form-control form-control-user" id="novaSenha">
-
-                    <label for="confirmaNovaSenha"> Confirmar nova senha:</label>
-                    <input type="password" class="form-control form-control-user" id="confirmaNovaSenha">
-                            
-                    <div class="btn-salvar-nova-senha">
-                      <a href="#" class="btn btn-success btn-circle btn-lg">
-                        <i class="fas fa-check"></i>
-                      </a>
-                    </div>
-                    
-                  </div>
+            <form class="was-validated">
+              <div class="mb-3">
+                <label for="validationTextarea">Detalhes</label>
+                <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Matéria, Dúvida, Conteúdo e etc" required></textarea>
+                <div class="invalid-feedback">
+                
                 </div>
               </div>
-            </div>
-  
-          </div>
+              <select class="custom-select custom-select-lg mb-3">
+                <option selected>Monitor</option>
+                <option value="1">Monito-Um</option>
+                <option value="2">MonitorDois</option>
+                <option value="3">MonitorTrês</option>
+              </select>
+              
+              <select class="custom-select custom-select-sm">
+                <option selected>Horario</option>
+                <option value="1">10H</option>
+                <option value="2">12H</option>
+                <option value="3">14H</option>
+              </select>
+              
+                                 
+            
+            </form>
           <!-- /.container-fluid -->
   
     </div>
